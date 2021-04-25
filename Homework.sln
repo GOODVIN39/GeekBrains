@@ -67,6 +67,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HomeworkL6", "HomeworkL6", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeworkL6.1", "HomeworkL6.1\HomeworkL6.1.csproj", "{FFE22A73-85E2-44EF-B703-5BC824215C09}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeworkL6.2", "Домашка_Урок_6 задача_ 2\HomeworkL6.2.csproj", "{54A01D8B-1117-4304-896D-50C8BB6570E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -177,6 +179,10 @@ Global
 		{FFE22A73-85E2-44EF-B703-5BC824215C09}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFE22A73-85E2-44EF-B703-5BC824215C09}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFE22A73-85E2-44EF-B703-5BC824215C09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54A01D8B-1117-4304-896D-50C8BB6570E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54A01D8B-1117-4304-896D-50C8BB6570E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54A01D8B-1117-4304-896D-50C8BB6570E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54A01D8B-1117-4304-896D-50C8BB6570E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -208,6 +214,7 @@ Global
 		{9E3C41FF-D397-4445-A37D-BC14AD59DA1C} = {A0AE4396-1BD4-4773-AAC1-B3E13E61C309}
 		{044B2252-0EA7-457A-ADD5-028CAA3DD057} = {A0AE4396-1BD4-4773-AAC1-B3E13E61C309}
 		{FFE22A73-85E2-44EF-B703-5BC824215C09} = {70E345EC-D5E6-463C-80B3-9D7C0E34C966}
+		{54A01D8B-1117-4304-896D-50C8BB6570E8} = {70E345EC-D5E6-463C-80B3-9D7C0E34C966}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {00BB3088-C89C-4CA9-A053-C45EAD561705}

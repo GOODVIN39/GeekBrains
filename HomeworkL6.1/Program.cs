@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace HomeworkL6._1
 {
+    //Александр Шаповаленко
+    //1. Изменить программу вывода таблицы функции так, чтобы можно было передавать функции типа double (double, double). 
+    //   Продемонстрировать работу на функции с функцией a* x^2 и функцией a* sin(x).
   
         // Описываем делегат. В делегате описывается сигнатура методов, на
         // которые он сможет ссылаться в дальнейшем (хранить в себе)
@@ -34,10 +37,9 @@ namespace HomeworkL6._1
 
         static void Main()
         {
-            Console.WriteLine("Таблица функции a*x^2:");
-            // Упрощение(с C# 2.0). Использование анонимного метода
-            double a=1;
-            Table(delegate (double x) { return a * Math.Sqrt(x); }, -2, 2);
+            Console.WriteLine("Таблица функции a*x^2:");            
+            double a = 5;
+            Table(delegate (double x) { return a * Math.Pow(x,2); }, -2, 2);
             Console.WriteLine("Таблица функции a*sin(x):");
             Table(delegate (double x) { return a * Math.Sin(x); }, -2, 2);            
             // Создаем новый делегат и передаем ссылку на него в метод Table
@@ -52,6 +54,7 @@ namespace HomeworkL6._1
             Console.WriteLine("Таблица функции x^2:");
             // Упрощение(с C# 2.0). Использование анонимного метода
             Table(delegate (double x) { return x * x; }, 0, 3);
+            Console.WriteLine("Нажмите Enter чтобы продолжить...");
             Console.ReadKey();
         }
     }
