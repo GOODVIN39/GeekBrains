@@ -56,17 +56,18 @@ namespace HomeworkL6._2
             fs.Close();
             return min;
         }
-        static void Main(string[] args)
+        
+        private static void Start()
         {
             do
-            {            
-            Del[] F = { F1, F2 };
-            Console.WriteLine("Выберите функцию 1 или 2\nИли нажмите 0 чтобы выйти из программы");
-            int func = int.Parse(Console.ReadLine());
+            {
+                Del[] F = { F1, F2 };
+                Console.WriteLine("Выберите функцию 1 или 2\nИли нажмите 0 чтобы выйти из программы");
+                int func = int.Parse(Console.ReadLine());
                 if (func == 1 || func == 2)
                 {
-                SaveFunc("data.bin", -2, 2, 1, F[func-1]);
-                Load("data.bin", out double min);
+                    SaveFunc("data.bin", -2, 2, 1, F[func - 1]);
+                    Load("data.bin", out double min);
                     Console.WriteLine($"\nСамое минимальное значение  = {min}\n");
                 }
                 else if (func == 0)
@@ -75,8 +76,12 @@ namespace HomeworkL6._2
                     break;
                 }
                 else Console.WriteLine("Вы ввели не верное значение\n");
-                           
+
             } while (true);
+        }
+        static void Main(string[] args)
+        {
+            Start();
             Console.ReadKey();
         }
     }

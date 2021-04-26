@@ -34,14 +34,12 @@ namespace HomeworkL6._1
         {
             return x * x * x;
         }
-
-        static void Main()
+        private static void Functions(double a)
         {
-            Console.WriteLine("Таблица функции a*x^2:");            
-            double a = 5;
-            Table(delegate (double x) { return a * Math.Pow(x,2); }, -2, 2);
+            Console.WriteLine("Таблица функции a*x^2:");
+            Table(delegate (double x) { return a * Math.Pow(x, 2); }, -2, 2);
             Console.WriteLine("Таблица функции a*sin(x):");
-            Table(delegate (double x) { return a * Math.Sin(x); }, -2, 2);            
+            Table(delegate (double x) { return a * Math.Sin(x); }, -2, 2);
             // Создаем новый делегат и передаем ссылку на него в метод Table
             Console.WriteLine("Таблица функции MyFunc:");
             // Параметры метода и тип возвращаемого значения, должны совпадать с делегатом
@@ -54,9 +52,16 @@ namespace HomeworkL6._1
             Console.WriteLine("Таблица функции x^2:");
             // Упрощение(с C# 2.0). Использование анонимного метода
             Table(delegate (double x) { return x * x; }, 0, 3);
+        }
+        static void Main()
+        {
+            double a = 5;
+            Functions(a);
             Console.WriteLine("Нажмите Enter чтобы продолжить...");
             Console.ReadKey();
         }
+
+        
     }
 
 
