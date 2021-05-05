@@ -8,6 +8,7 @@ using System.Xml.Serialization;
 
 namespace HomeworkL8._4
 {
+    
     class TrueFalse
     {
         string fileName;
