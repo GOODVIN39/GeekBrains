@@ -86,5 +86,10 @@ namespace HomeworkL8._4
             dataBase[(int)numNumber.Value - 1].text = tboxQuestion.Text;
             dataBase[(int)numNumber.Value - 1].trueFalse = cboxTrue.Checked;
         }
+
+        private void оПрограммеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Автор: ГикБрейнс\nВерсия: 1.03\nАвторские права: Никому не пренадлежит", "О программе" );
+        }
     }
 }

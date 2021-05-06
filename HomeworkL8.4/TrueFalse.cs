@@ -8,8 +8,8 @@ using System.Xml.Serialization;
 
 namespace HomeworkL8._4
 {
-    
-    class TrueFalse
+
+    public class TrueFalse
     {
         string fileName;
         List<Question> list;
@@ -30,7 +30,7 @@ namespace HomeworkL8._4
         public void Remove(int index)
         {
             if (list != null && index < list.Count && index >= 0) list.RemoveAt(index);
-        }
+        }        
         public Question this[int index]
         {
             get { return list[index]; }
@@ -55,3 +55,5 @@ namespace HomeworkL8._4
         }
     }
 }
+
+
